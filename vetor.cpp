@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <bits/stdc++.h>
-
+//teste
 using namespace std;
 
 class MeuVetorFavorito
