@@ -12,9 +12,10 @@ public:
     ~MeuVetorFavorito();
     bool add(int valor);
     bool rem(int pos);
-    int index(int pos);
-    int buscar(int valor);
     void ordenar();
+
+    int index(int pos) const;
+    int buscar(int valor) const;
 private:
 
     int *vetor;
@@ -59,12 +60,12 @@ bool MeuVetorFavorito::rem(int pos){
 
     return true;
 }
-int MeuVetorFavorito::index(int pos){
+int MeuVetorFavorito::index(int pos) const{
     if (pos>=0 && pos<this->tam){
         return this->vetor[pos];
     }
 }
-int MeuVetorFavorito::buscar(int valor){
+int MeuVetorFavorito::buscar(int valor) const{
     int i;
     for(i = 0;i<this->tam;i++){
         if(valor == vetor[i]){
